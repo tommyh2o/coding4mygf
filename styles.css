@@ -1,0 +1,134 @@
+/* Import the Google Font */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Import FontAwesome for the mail icon */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* Define CSS variables */
+:root {
+    --background-color: #ffb3c6; /* Background color */
+    --text-color: #ffe5ec;      /* Text color */
+    --heading-color: #ffe5ec;  /* Optional: Add a heading color */
+    --font-family: 'PT Serif', serif; /* Add a global font variable */
+}
+
+/* Base styles */
+body {
+    font-size: 18px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+    margin: 0 0 10px;
+    font-family: var(--font-family);
+}
+
+ul {
+    padding-left: 20px; /* Adjust the left padding to position the bullet */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0; /* Remove default margin */
+}
+
+li {
+    margin: 0; /* Remove margin around list items */
+    padding: 0; /* Remove padding around list items */
+    list-style-position: inside; /* Move the bullet inside the list item */
+}
+
+/* Links */
+a {
+    color: var(--heading-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--heading-color);
+    color: white;
+}
+
+/* General container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Mail icon styles */
+#icon {
+    font-size: 100px;
+    color: var(--heading-color);
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin-top: 50px;
+}
+
+#icon:hover {
+    transform: scale(1.1);
+    color: var(--text-color);
+}
+
+/* Hidden text styles */
+.hidden {
+    display: none;
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--heading-color);
+}
+
+#text p {
+    margin: 0;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 900px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #icon {
+        font-size: 90px;
+    }
+}
+
+/* Responsive styles for phones */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #icon {
+        font-size: 80px;
+    }
+}

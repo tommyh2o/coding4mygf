@@ -16,3 +16,10 @@ Setup:
 4. npm install live-server --save-dev
 5. Add "start": "live-server" to package.json
 6. npm start (to view webpage)
+
+Git:
+1. git init
+2. git add .
+3. git commit -m "message here"
+4. git remote add origin (url here)
+5. git push -u origin main
